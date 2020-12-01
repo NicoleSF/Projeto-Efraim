@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  
   overflow: hidden;
   position: relative;
 }
@@ -2177,7 +2177,7 @@ section {
 /* estilo das mudanças feitas por nicole e valeska */
 
 .display-4, .lead {
-
+  font-family: sans-serif;
   color: #FFFFFF;
   font-weight: bold;
   text-align: left;
