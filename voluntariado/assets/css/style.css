@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #393939;
+  color: #444444;
   background-image: url("../img/fundo\ \(2\).jpeg");
   background-repeat: no-repeat;
   background-position: right;
@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 50vh;
-  background: url("../img/apoio4.jpg") top center no-repeat;
+  background: url("../img/apoio4.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color:#FFB703;
+  color: #ffb703;
 }
 
 #hero h2 {
@@ -413,7 +413,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
     padding-top: 58px;
     height: 50vh;
-    
   }
   #hero h1 {
     font-size: 48px;
@@ -427,11 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-height: 500px) {
   #hero {
     height: 50vh;
-    
   }
-
- 
-  
 }
 
 /*--------------------------------------------------------------
@@ -445,14 +440,14 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   position: relative;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -588,6 +583,7 @@ section {
 .about .container {
   position: relative;
   z-index: 10;
+  margin-top: 50px;
 }
 
 .about .content {
@@ -1279,7 +1275,7 @@ section {
   color: #444444;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
+  padding: 35px 0 50px 0;
   border-radius: 4px;
 }
 
@@ -1307,7 +1303,6 @@ section {
 
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
   border-radius: 4px;
 }
 
@@ -2181,16 +2176,13 @@ section {
 
 /* estilo das mudanças feitas por nicole e valeska */
 
-.display-4 {
 
-  text-align: left;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  color: #FFD02F;
+.subtitulo{
+
+  margin-top: 20px;
+  padding-bottom: 40px;
   
 }
-
 
 .form-control {
 
@@ -2198,7 +2190,15 @@ section {
   background: #F3F1F4;
 }
 
+.jumbotron {
 
+  padding-top: 210px;
+  background-image: url("../img/apoio4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
 
 .img-grande{
   padding: 0 20px 0 20px;
@@ -2210,11 +2210,6 @@ section {
   margin-right: 50px;
 }
 
-
-.logo{
-
-  margin-left: 100px;
-}
 
 .color-about{
 
@@ -2230,8 +2225,76 @@ ul{
 text-align: left;
 }
 
-.about{
-  padding-top: 50px;
+
+.form-row{
+  display:block;
+}
+
+@media screen and (min-width: 1129px){
+  .form-row{
+    display: flex;
+  }
+  .contact .php-email-form{
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 552px){
+  .img-grande{
+    padding: 0;
+  }
+  .contact{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  
 }
 
 
+  
+@media (max-width: 480px) {
+	.about .container {
+		padding: 0 30px;
+	}
+
+#hero h1 {
+  font-size: 2.25em;
+  
+}
+
+.section-title h2 {
+ font-size: 1.75em;
+  
+}
+
+h3, h4 {
+	font-size: 1.32em;
+}
+
+.events .event-item h3 {
+	font-size: 1.32em;
+}
+	p { 
+		font-size:0.75em;
+	}
+
+.col-form-label, .mb-3, .contact .php-email-form button[type="submit"] {
+    font-size: 0.75em;
+}
+
+.about li {
+    font-size: 0.75em;
+}
+.contact .php-email-form input, .contact .php-email-form textarea, .form-control {
+    font-size: 0.7em !important;
+		max-width: 260px;
+    margin: 0 auto;
+}
+
+#footer .footer-top .row p, #footer .footer-top .row p {
+  font-size: 14px ;
+}
+
+
+}
